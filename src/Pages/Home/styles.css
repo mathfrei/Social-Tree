@@ -1,0 +1,140 @@
+/*:root {
+    --body-bg-color: #FAF7FD;
+    --purple: #BB99DD;
+  }
+*/
+.Main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: url(../../assets/sea-beach-rocks-stones-1920x1080.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.main-section {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    z-index: 2;
+}
+
+.Main::before{
+    content: " ";
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(58, 58, 58);
+    opacity: 0.8;
+    z-index: 1;
+}
+
+#profile-picture {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border: 5px solid #BB99DD;
+    background-size: contain;
+    animation-name: multicolor_border;
+    animation-duration: 10s;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.link-container > #ex_link {
+    width: 600px;
+    height: 80px;
+    margin: 20px 20px;
+    border: 3px solid #BB99DD;
+    text-align: center; 
+    animation-name: multicolor_border;
+    animation-delay: 0s;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes multicolor_border {
+   0% {
+    border-color: rgb(3, 229, 245)
+   }
+
+   20% {
+
+    border-color: yellow;
+   }
+
+   40% {
+    border-color: Red;
+   }
+
+   60% {
+    border-color: green;
+   }
+
+   80% {
+    border-color: #ff10cf;
+   }
+
+   100% {
+    border-color: rgb(3, 229, 245)
+   }
+
+
+}
+/*
+@keyframes multicolor_pic {
+  0% {
+    border-color: red
+  }
+  30%{
+   border-color: green;
+  }
+  70%{
+   border-blue: blue;
+  }
+  100% {
+    border-color: red
+  }
+
+}
+*/
+
+.link-container > div > a {
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+    color: #BB99DD;
+    text-decoration: none;
+
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    width: 600px;
+}
+
+.logo-container > img {
+    width: 50px;
+    height: 50px;
+}
